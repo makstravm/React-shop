@@ -3,6 +3,7 @@
         max-height: 100px;
     }
 }
+
 .GoodCard {
     border: 1px solid cyan;
     border-radius: 15px;
@@ -10,6 +11,7 @@
         max-width: 50%;
     }
 }
+
 .App {
     header {
         .Logo {
@@ -37,14 +39,17 @@
         }
     }
 }
+
 .CartItem {
     padding: 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     img {
         max-width: 10vw;
     }
+    
     input {
         max-width: 7vw;
         text-align: center;
