@@ -1,17 +1,87 @@
 .Logo {
     img {
-        max-height: 100px;
+        width: 100px;
     }
 }
+.HeaderTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.GoodCard {
+.GoodCart {
     border: 1px solid cyan;
     border-radius: 15px;
     img {
         max-width: 50%;
     }
 }
+.UserPanel {
+    h2 {
+        display: inline-block;
+        padding-right: 10px;
+        vertical-align: middle;
+    }
+    a {
+        text-decoration: none;
+        padding: 5px 10px;
+        margin: 0 10px;
+        display: inline-block;
+        border: 1px solid #ec0099;
+    }
+}
+.LoginForm {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(#fff, 0.8);
 
+    &__inner {
+        position: relative;
+        padding: 30px 25px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 25px;
+        box-shadow: 0 0 6px rgb(0, 0, 0);
+        label {
+            display: block;
+            padding-bottom: 10px;
+        }
+        input {
+            width: 85%;
+            padding: 5px 10px;
+            margin-top: 5px;
+        }
+        button {
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 5px;
+            font-size: 0.8em;
+        }
+        .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 10px 15px;
+            line-height: 1.2em;
+            font-weight: 700;
+        }
+    }
+}
 .App {
     header {
         .Logo {
@@ -49,7 +119,7 @@
     img {
         max-width: 10vw;
     }
-    
+
     input {
         max-width: 7vw;
         text-align: center;
@@ -57,5 +127,59 @@
     }
     button {
         cursor: pointer;
+    }
+}
+.Cart {
+    button {
+        display: block;
+    }
+}
+.Good {
+    img {
+        display: block;
+        width: 35vw;
+    }
+}
+.Koshik {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 25px;
+    &__link {
+        display: inline-block;
+        position: relative;
+        margin-right: 15px;
+        img {
+            display: block;
+            width: 5vw;
+        }
+        span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #fff;
+            color: #000;
+            border-radius: 50%;
+            width: 20px;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 0 0 3px #000;
+        }
+    }
+}
+.MyordersList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        font-weight: 700;
+        color: #000;
+        padding: 5px 10px;
+        width: 250px;
+    }
+    p {
+        padding: 0 15px;
+        width: 9vw;
     }
 }
